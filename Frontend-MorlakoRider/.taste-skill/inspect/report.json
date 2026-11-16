@@ -1,0 +1,2013 @@
+{
+ "url": "http://localhost:4173/",
+ "at": "2026-11-16T03:56:31.283Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.59,
+    0.59,
+    0.61,
+    0.59,
+    0.74,
+    0.75,
+    0.66,
+    0.63,
+    0.71,
+    0.54,
+    0.35,
+    0.57
+   ],
+   "motion": {
+    "elements": 35,
+    "css": 35,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 11421,
+     "screens": 12.7,
+     "words": 630,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "cuenca-amanecer.jpg",
+      "cuenca-noche.jpg",
+      "cuenca-rio.jpg",
+      "cuenca-valdivieso.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CASCOS PARA TRABAJAR EN MOTO",
+     "words": 5,
+     "chars": 28,
+     "lines": 2,
+     "size": 80,
+     "vw": 5.6,
+     "font": "Barlow Condensed",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.42,
+     "top": 284,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CASCOS PARA TRABAJAR EN MOTO",
+     "words": 5,
+     "lines": 2,
+     "size": 80,
+     "font": "Barlow Condensed"
+    },
+    "headings": [
+     {
+      "text": "CASCOS PARA TRABAJAR EN MOTO",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 80,
+      "vw": 5.6,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 284,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "CATÁLOGO",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 995,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Llegamos a donde trabajas",
+      "words": 4,
+      "chars": 25,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Barlow",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.26,
+      "top": 2834,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "TU PEDIDO",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.34,
+      "top": 8691,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "CÓMO ELEGIR TU CASCO",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 9211,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "PREGUNTAS FRECUENTES",
+      "words": 2,
+      "chars": 20,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 9952,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MORLAKO RIDER",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 165.6,
+      "vw": 11.5,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 11141,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Barlow",
+       "share": 0.96,
+       "mono": false
+      },
+      {
+       "family": "Barlow Condensed",
+       "share": 0.03,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      14,
+      17,
+      20,
+      24,
+      56,
+      64,
+      80,
+      166
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Barlow",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.3
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 165.6,
+      "vw": 11.5,
+      "font": "Barlow Condensed",
+      "text": "MORLAKO RIDER"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fdf7e5",
+     "bodyBgHsl": {
+      "h": 45,
+      "s": 0.86,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#2a241c",
+       "top": 10997,
+       "hsl": {
+        "h": 34,
+        "s": 0.2,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a241c",
+       "share": 0.81
+      },
+      {
+       "color": "#6f5417",
+       "share": 0.11
+      },
+      {
+       "color": "#fdf7e5",
+       "share": 0.04
+      },
+      {
+       "color": "#e7c68e",
+       "share": 0.03
+      },
+      {
+       "color": "#f5b033",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#f4ead0",
+      "hsl": {
+       "h": 43,
+       "s": 0.62,
+       "l": 0.89
+      },
+      "fg": "#2a241c"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 13,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "WhatsApp",
+      "Ver catálogo",
+      "Preguntar por WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 26,
+     "boxRadius": 6,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 6,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.49
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 78,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "barlow",
+     "barlow condensed"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 11421,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 78,
+      "height": 831,
+      "words": 41,
+      "media": 0,
+      "middle": 99,
+      "heading": {
+       "text": "Cascos para trabajar en moto",
+       "size": 80,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 386,
+      "textLeft": 32,
+      "textRight": 386,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.section-head",
+      "tag": "div",
+      "top": 995,
+      "height": 124,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 32,
+      "right": 948,
+      "textLeft": 32,
+      "textRight": 948,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tiles",
+      "tag": "div",
+      "top": 1323,
+      "height": 7239,
+      "words": 321,
+      "media": 1,
+      "middle": 24,
+      "heading": {
+       "text": "Llegamos a donde trabajas",
+       "size": 56,
+       "tag": "h3"
+      },
+      "left": 48,
+      "right": 32,
+      "textLeft": 48,
+      "textRight": 92,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tallas.sizes.reveal",
+      "tag": "section",
+      "top": 9096,
+      "height": 856,
+      "words": 63,
+      "media": 1,
+      "middle": 83,
+      "heading": {
+       "text": "Cómo elegir tu casco",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 196,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#preguntas.faq.reveal",
+      "tag": "section",
+      "top": 9952,
+      "height": 1077,
+      "words": 98,
+      "media": 1,
+      "middle": 57,
+      "heading": null,
+      "left": 56,
+      "right": 32,
+      "textLeft": 56,
+      "textRight": 166,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contacto.footer",
+      "tag": "footer",
+      "top": 10997,
+      "height": 424,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "MORLAKO RIDER",
+       "size": 166,
+       "tag": "p"
+      },
+      "left": 32,
+      "right": 36,
+      "textLeft": 32,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1300,
+      "height": 300
+     },
+     {
+      "top": 2016,
+      "height": 296
+     },
+     {
+      "top": 3516,
+      "height": 292
+     },
+     {
+      "top": 4196,
+      "height": 296
+     },
+     {
+      "top": 4964,
+      "height": 296
+     },
+     {
+      "top": 5732,
+      "height": 292
+     },
+     {
+      "top": 6412,
+      "height": 296
+     },
+     {
+      "top": 7152,
+      "height": 292
+     },
+     {
+      "top": 7912,
+      "height": 292
+     }
+    ],
+    "h1s": [
+     {
+      "text": "CASCOS PARA TRABAJAR EN MOTO",
+      "size": 80,
+      "top": 284,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 48,
+      "n": 15
+     },
+     {
+      "x": 740,
+      "n": 9
+     },
+     {
+      "x": 32,
+      "n": 6
+     },
+     {
+      "x": 394,
+      "n": 3
+     },
+     {
+      "x": 1086,
+      "n": 3
+     },
+     {
+      "x": 764,
+      "n": 1
+     },
+     {
+      "x": 880,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 38,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 0,
+     "y": 660,
+     "w": 600,
+     "h": 240
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.79,
+    0.59,
+    0.7,
+    0.68,
+    0.69,
+    0.8,
+    0.74,
+    0.74,
+    0.8,
+    0.73,
+    0.65,
+    0.57
+   ],
+   "motion": {
+    "elements": 35,
+    "css": 35,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 16407,
+     "screens": 16,
+     "words": 626,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "cuenca-amanecer.jpg",
+      "cuenca-noche.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CASCOS PARA TRABAJAR EN MOTO",
+     "words": 5,
+     "chars": 28,
+     "lines": 1,
+     "size": 56.3,
+     "vw": 7.3,
+     "font": "Barlow Condensed",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 86,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CASCOS PARA TRABAJAR EN MOTO",
+     "words": 5,
+     "lines": 1,
+     "size": 56.3,
+     "font": "Barlow Condensed"
+    },
+    "headings": [
+     {
+      "text": "CASCOS PARA TRABAJAR EN MOTO",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 56.3,
+      "vw": 7.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 86,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "CATÁLOGO",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 48.6,
+      "vw": 6.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1379,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Llegamos a donde trabajas",
+      "words": 4,
+      "chars": 25,
+      "lines": 2,
+      "size": 39,
+      "vw": 5.1,
+      "font": "Barlow",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 4860,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "TU PEDIDO",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 48.6,
+      "vw": 6.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.65,
+      "top": 13477,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "CÓMO ELEGIR TU CASCO",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 48.6,
+      "vw": 6.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 13880,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "PREGUNTAS FRECUENTES",
+      "words": 2,
+      "chars": 20,
+      "lines": 1,
+      "size": 48.6,
+      "vw": 6.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 14733,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MORLAKO RIDER",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 88.3,
+      "vw": 11.5,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 16189,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Barlow",
+       "share": 0.96,
+       "mono": false
+      },
+      {
+       "family": "Barlow Condensed",
+       "share": 0.03,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      14,
+      17,
+      20,
+      21,
+      24,
+      39,
+      49,
+      56,
+      88
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Barlow",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.3
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 88.3,
+      "vw": 11.5,
+      "font": "Barlow Condensed",
+      "text": "MORLAKO RIDER"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fdf7e5",
+     "bodyBgHsl": {
+      "h": 45,
+      "s": 0.86,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f4ead0",
+       "top": 1910,
+       "hsl": {
+        "h": 43,
+        "s": 0.62,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#2a241c",
+       "top": 16093,
+       "hsl": {
+        "h": 34,
+        "s": 0.2,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a241c",
+       "share": 0.81
+      },
+      {
+       "color": "#6f5417",
+       "share": 0.11
+      },
+      {
+       "color": "#fdf7e5",
+       "share": 0.04
+      },
+      {
+       "color": "#e7c68e",
+       "share": 0.03
+      },
+      {
+       "color": "#f5b033",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#f4ead0",
+      "hsl": {
+       "h": 43,
+       "s": 0.62,
+       "l": 0.89
+      },
+      "fg": "#2a241c"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 13,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "WhatsApp",
+      "Ver catálogo",
+      "Preguntar por WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 26,
+     "boxRadius": 6,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 6,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.68
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 78,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "barlow",
+     "barlow condensed"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 16407,
+    "margins": {
+     "left": 23,
+     "right": 23
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 78,
+      "height": 1254,
+      "words": 41,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Cascos para trabajar en moto",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 23,
+      "right": 99,
+      "textLeft": 23,
+      "textRight": 99,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tools",
+      "tag": "div",
+      "top": 1642,
+      "height": 212,
+      "words": 4,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 646,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tiles",
+      "tag": "div",
+      "top": 1878,
+      "height": 11471,
+      "words": 328,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Llegamos a donde trabajas",
+       "size": 39,
+       "tag": "h3"
+      },
+      "left": 23,
+      "right": 23,
+      "textLeft": 27,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "aside.cart.reveal",
+      "tag": "aside",
+      "top": 13445,
+      "height": 307,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tu pedido",
+       "size": 49,
+       "tag": "h2"
+      },
+      "left": 217,
+      "right": 208,
+      "textLeft": 217,
+      "textRight": 208,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tallas.sizes.reveal",
+      "tag": "section",
+      "top": 13816,
+      "height": 917,
+      "words": 63,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Cómo elegir tu casco",
+       "size": 49,
+       "tag": "h2"
+      },
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#preguntas.faq.reveal",
+      "tag": "section",
+      "top": 14733,
+      "height": 1392,
+      "words": 98,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contacto.footer",
+      "tag": "footer",
+      "top": 16093,
+      "height": 315,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "MORLAKO RIDER",
+       "size": 88,
+       "tag": "p"
+      },
+      "left": 23,
+      "right": 27,
+      "textLeft": 23,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CASCOS PARA TRABAJAR EN MOTO",
+      "size": 56,
+      "top": 86,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 39,
+      "n": 19
+     },
+     {
+      "x": 23,
+      "n": 12
+     },
+     {
+      "x": 392,
+      "n": 6
+     },
+     {
+      "x": 217,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 38,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.64,
+    0.49,
+    0.69,
+    0.68,
+    0.71,
+    0.63,
+    0.78,
+    0.64,
+    0.54,
+    0.59,
+    0.65,
+    0.73
+   ],
+   "motion": {
+    "elements": 35,
+    "css": 35,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 12873,
+     "screens": 15.3,
+     "words": 626,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "cuenca-amanecer.jpg",
+      "cuenca-noche.jpg",
+      "cuenca-rio.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CASCOS PARA TRABAJAR EN MOTO",
+     "words": 5,
+     "chars": 28,
+     "lines": 2,
+     "size": 48,
+     "vw": 12.3,
+     "font": "Barlow Condensed",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 86,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CASCOS PARA TRABAJAR EN MOTO",
+     "words": 5,
+     "lines": 2,
+     "size": 48,
+     "font": "Barlow Condensed"
+    },
+    "headings": [
+     {
+      "text": "MORLAKO RIDER",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 17,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "CASCOS PARA TRABAJAR EN MOTO",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 86,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "CATÁLOGO",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 37.3,
+      "vw": 9.6,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1065,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Llegamos a donde trabajas",
+      "words": 4,
+      "chars": 25,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Barlow",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 4003,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "TU PEDIDO",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 37.3,
+      "vw": 9.6,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 10502,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Total (0 productos) $0",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Barlow",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 10654,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "CÓMO ELEGIR TU CASCO",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 37.3,
+      "vw": 9.6,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10919,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "PREGUNTAS FRECUENTES",
+      "words": 2,
+      "chars": 20,
+      "lines": 1,
+      "size": 37.3,
+      "vw": 9.6,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11612,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MORLAKO RIDER",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 44.9,
+      "vw": 11.5,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 12623,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Barlow",
+       "share": 0.96,
+       "mono": false
+      },
+      {
+       "family": "Barlow Condensed",
+       "share": 0.03,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      14,
+      17,
+      20,
+      24,
+      32,
+      37,
+      45,
+      48
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Barlow",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.3
+     },
+     "measureChars": 36,
+     "max": {
+      "size": 48,
+      "vw": 12.3,
+      "font": "Barlow Condensed",
+      "text": "Cascos para trabajar en moto"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fdf7e5",
+     "bodyBgHsl": {
+      "h": 45,
+      "s": 0.86,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#581408",
+       "top": 10470,
+       "hsl": {
+        "h": 9,
+        "s": 0.83,
+        "l": 0.19
+       }
+      },
+      {
+       "color": "#2a241c",
+       "top": 12527,
+       "hsl": {
+        "h": 34,
+        "s": 0.2,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a241c",
+       "share": 0.81
+      },
+      {
+       "color": "#6f5417",
+       "share": 0.11
+      },
+      {
+       "color": "#fdf7e5",
+       "share": 0.04
+      },
+      {
+       "color": "#e7c68e",
+       "share": 0.03
+      },
+      {
+       "color": "#f5b033",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#f4ead0",
+      "hsl": {
+       "h": 43,
+       "s": 0.62,
+       "l": 0.89
+      },
+      "fg": "#2a241c"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 13,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "WhatsApp",
+      "Ver catálogo",
+      "Preguntar por WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 26,
+     "boxRadius": 6,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 6,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.44
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 78,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "barlow",
+     "barlow condensed"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 12873,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 78,
+      "height": 940,
+      "words": 41,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Cascos para trabajar en moto",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 27,
+      "textLeft": 16,
+      "textRight": 27,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.filters",
+      "tag": "div",
+      "top": 1196,
+      "height": 200,
+      "words": 9,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 66,
+      "textLeft": 34,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tools",
+      "tag": "div",
+      "top": 1420,
+      "height": 212,
+      "words": 4,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 275,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tiles",
+      "tag": "div",
+      "top": 1656,
+      "height": 8718,
+      "words": 328,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Llegamos a donde trabajas",
+       "size": 32,
+       "tag": "h3"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 20,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "aside.cart.reveal",
+      "tag": "aside",
+      "top": 10470,
+      "height": 322,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tu pedido",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 74,
+      "textLeft": 48,
+      "textRight": 74,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tallas.sizes.reveal",
+      "tag": "section",
+      "top": 10855,
+      "height": 756,
+      "words": 63,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Cómo elegir tu casco",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#preguntas.faq.reveal",
+      "tag": "section",
+      "top": 11612,
+      "height": 947,
+      "words": 98,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contacto.footer",
+      "tag": "footer",
+      "top": 12527,
+      "height": 346,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "MORLAKO RIDER",
+       "size": 45,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 22,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CASCOS PARA TRABAJAR EN MOTO",
+      "size": 48,
+      "top": 86,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 19
+     },
+     {
+      "x": 16,
+      "n": 12
+     },
+     {
+      "x": 203,
+      "n": 6
+     },
+     {
+      "x": 48,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 38,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fdf7e5, button #f4ead0, text #fdf7e5).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/desktop-page-01.jpg",
+    "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/desktop-page-02.jpg",
+    "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/tablet-page-01.jpg",
+    "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/mobile-page-01.jpg",
+    "/home/jhonatan/VScode/MorlakoRider/Frontend-MorlakoRider/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
