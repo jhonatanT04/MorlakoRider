@@ -476,3 +476,9 @@ main > section:not(.ground-inverse):not(.ground-maroon) { background: transparen
   #contact.closing > .wrap { grid-template-rows: minmax(0, 1fr) auto; row-gap: var(--s-7); }
   #contact .closing__cta > .close__media { min-height: 220px; }
 }
+
+/* checkout con transferencia: la cuenta de la tienda y luego los datos que llena el cliente */
+.transfer__to { display: grid; gap: var(--s-3); padding: var(--s-5); background: var(--p-surface); border-radius: var(--r-lg); border-left: 3px solid var(--p-accent); }
+.transfer__to p, .transfer__hint { margin: 0; color: var(--p-muted); }
+.transfer__to p { color: var(--p-ink); font-weight: 600; }
+.checkout .field input[type="date"] { color-scheme: dark; }
