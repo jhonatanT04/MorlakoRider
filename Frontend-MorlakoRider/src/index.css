@@ -468,3 +468,11 @@ main > section:not(.ground-inverse):not(.ground-maroon) { background: transparen
 @media (max-width: 1023px) { .pdp__media { aspect-ratio: 1; } }
 [data-pending] { color: var(--p-muted) !important; font-weight: 600; }
 .product-card__price[data-pending] { font-size: 16px !important; }
+
+/* celular: el cierre con foto y los enlaces del pie en una sola pantalla (el kit le da dos y dejaba
+   un espacio negro debajo de los enlaces); la foto llena lo que dejan las palabras */
+@media (max-width: 639px) {
+  #contact.closing { --hm: 1; }
+  #contact.closing > .wrap { grid-template-rows: minmax(0, 1fr) auto; row-gap: var(--s-7); }
+  #contact .closing__cta > .close__media { min-height: 220px; }
+}
