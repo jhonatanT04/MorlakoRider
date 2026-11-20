@@ -482,3 +482,17 @@ main > section:not(.ground-inverse):not(.ground-maroon) { background: transparen
 .transfer__to p, .transfer__hint { margin: 0; color: var(--p-muted); }
 .transfer__to p { color: var(--p-ink); font-weight: 600; }
 .checkout .field input[type="date"] { color-scheme: dark; }
+
+/* tablet y teléfono: como en escritorio, la foto cubre toda la primera pantalla (también por debajo de la
+   barra transparente) y el texto va encima, abajo, sobre un degradado oscuro para que se lea */
+@media (max-width: 1023px) {
+  .hero--night { --photo: 0px; position: relative; isolation: isolate; }
+  /* la foto arriba (sin ampliarse de más en una pantalla alta) y se desvanece hacia la fibra de carbono */
+  .hero--night > .hero__bg { top: 0; bottom: auto; height: min(64svh, 140vw); object-position: 60% 35%; }
+  .hero--night::after {
+    content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    background: linear-gradient(180deg, rgb(17 18 15 / 0) 35%, rgb(17 18 15 / 0.6) 58%, rgb(17 18 15 / 0) 80%);
+  }
+  .hero--night > .wrap > .hero-text,
+  .hero--night[data-calm] > .wrap > .hero-text { justify-content: flex-end; }
+}
