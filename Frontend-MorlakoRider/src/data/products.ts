@@ -1,79 +1,133 @@
-// CATÁLOGO DE MORLAKO RIDER
-// Único producto real: SHAFT SH-360MX (con foto y precio de la tienda).
-// Todo lo demás es de MUESTRA: reemplazar nombres, precios, descripciones y fotos antes de publicar.
-// Para agregar fotos, guardarlas en public/img/ y poner la ruta en `image`.
-
-export const categories = [
-  'Todos',
-  'Cascos',
-  'Guantes',
-  'Impermeables',
-  'Soportes',
-  'Cargadores',
-  'Luces',
-  'Maletas',
-  'Protección',
-] as const
-
-export type Category = (typeof categories)[number]
+/**
+ * Catálogo de la tienda, con las fotos del cliente (public/assets/img/products).
+ * Solo el Bell SRT tiene precio confirmado. Los productos sin `price` se muestran como
+ * "Precio por confirmar" y no se pueden agregar al carrito hasta que se ponga su precio aquí.
+ * Las tallas son las habituales de cada tipo de producto: confirmarlas con el stock real.
+ * Más adelante este catálogo puede venir del backend (Backend-MR).
+ */
+export type Category = 'cascos' | 'chaquetas' | 'guantes'
 
 export type Product = {
-  id: string
+  slug: string
   name: string
-  category: Exclude<Category, 'Todos'>
-  price: number
-  note: string
-  image?: string
-  sample?: boolean
+  category: Category
+  /** en dólares; sin precio el producto no se puede comprar todavía */
+  price?: number
+  sizes: string[]
+  /** foto en public/assets/img/products/<image>-500.jpg y -960.jpg */
+  image: string
+  /** ancho y alto del archivo -960 (puede ser menor a 960) */
+  dims: [number, number]
+  /** fondo de la foto, para que el marco no la recorte en otro color */
+  bg: string
+  alt: string
+  short: string
+  description: string
+  specs: [string, string][]
 }
 
-export const products: Product[] = [
-  {
-    id: 'sh-360mx',
-    name: 'SHAFT SH-360MX',
-    category: 'Cascos',
-    price: 115,
-    note: 'Adventure · doble propósito. DOT, coraza ABS, preparado para Pinlock 30, 2 visores exteriores + repuesto de visor.',
-    image: '/img/casco/sh-360mx.jpg',
-  },
-
-  // Cascos
-  { id: 'casco-integral', name: 'Casco integral', category: 'Cascos', price: 85, note: 'Cierre de doble anilla y visor con filtro UV.', sample: true },
-  { id: 'casco-abierto', name: 'Casco abierto con visera', category: 'Cascos', price: 55, note: 'Ligero, ideal para ciudad y reparto.', sample: true },
-  { id: 'casco-modular', name: 'Casco modular abatible', category: 'Cascos', price: 130, note: 'Mentonera que se levanta para hablar o tomar aire.', sample: true },
-  { id: 'visor-extra', name: 'Visor de repuesto', category: 'Cascos', price: 18, note: 'Transparente, ahumado o espejado.', sample: true },
-
-  // Guantes
-  { id: 'guantes-ruta', name: 'Guantes de ruta', category: 'Guantes', price: 25, note: 'Palma reforzada, cierre de velcro.', sample: true },
-  { id: 'guantes-invierno', name: 'Guantes impermeables', category: 'Guantes', price: 32, note: 'Forro térmico para lluvia y frío.', sample: true },
-  { id: 'guantes-verano', name: 'Guantes ventilados', category: 'Guantes', price: 22, note: 'Malla transpirable para el calor.', sample: true },
-
-  // Impermeables
-  { id: 'imper-dos', name: 'Impermeable de dos piezas', category: 'Impermeables', price: 35, note: 'Chaqueta y pantalón, costuras selladas.', sample: true },
-  { id: 'imper-reflect', name: 'Impermeable con reflectivos', category: 'Impermeables', price: 42, note: 'Cintas reflectivas para trabajar de noche.', sample: true },
-  { id: 'cubre-botas', name: 'Cubrebotas impermeables', category: 'Impermeables', price: 12, note: 'Se ponen sobre el calzado, con suela antideslizante.', sample: true },
-
-  // Soportes
-  { id: 'soporte-manubrio', name: 'Soporte de celular para manubrio', category: 'Soportes', price: 15, note: 'Sujeción firme con correa de goma.', sample: true },
-  { id: 'soporte-retrovisor', name: 'Soporte para retrovisor', category: 'Soportes', price: 17, note: 'Se fija al espejo, giro de 360 grados.', sample: true },
-  { id: 'funda-lluvia', name: 'Funda impermeable para celular', category: 'Soportes', price: 10, note: 'Pantalla táctil usable bajo la lluvia.', sample: true },
-
-  // Cargadores
-  { id: 'cargador-usb', name: 'Cargador USB para moto', category: 'Cargadores', price: 12, note: 'Doble puerto USB, con voltímetro.', sample: true },
-  { id: 'cargador-rapido', name: 'Cargador USB-C de carga rápida', category: 'Cargadores', price: 20, note: 'Conexión directa a la batería con fusible.', sample: true },
-  { id: 'cable-moto', name: 'Cable de carga reforzado', category: 'Cargadores', price: 6, note: 'Resistente a tirones y a la humedad.', sample: true },
-
-  // Luces
-  { id: 'luz-freno', name: 'Luz LED de freno', category: 'Luces', price: 18, note: 'Visible de día y de noche.', sample: true },
-  { id: 'luces-auxiliares', name: 'Par de luces auxiliares LED', category: 'Luces', price: 35, note: 'Mayor visibilidad en ruta oscura.', sample: true },
-  { id: 'direccionales', name: 'Direccionales LED', category: 'Luces', price: 14, note: 'Par, consumo bajo.', sample: true },
-
-  // Maletas
-  { id: 'top-case', name: 'Baúl trasero (top case)', category: 'Maletas', price: 60, note: 'Cabe un casco, con llave y base de montaje.', sample: true },
-  { id: 'mochila-reparto', name: 'Mochila térmica de reparto', category: 'Maletas', price: 38, note: 'Mantiene la comida caliente, interior lavable.', sample: true },
-  { id: 'alforjas', name: 'Alforjas laterales', category: 'Maletas', price: 48, note: 'Par, impermeables, con correas ajustables.', sample: true },
-
-  // Protección
-  { id: 'rodilleras', name: 'Rodilleras y coderas', category: 'Protección', price: 28, note: 'Juego de cuatro piezas con correas ajustables.', sample: true },
-  { id: 'chaleco-reflect', name: 'Chaleco reflectivo', category: 'Protección', price: 9, note: 'Alta visibilidad, talla ajustable.', sample: true },
+export const CATEGORIES: { id: Category; label: string }[] = [
+  { id: 'cascos', label: 'Cascos' },
+  { id: 'chaquetas', label: 'Chaquetas' },
+  { id: 'guantes', label: 'Guantes' },
 ]
+
+const HELMET_SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+
+export const PRODUCTS: Product[] = [
+  {
+    slug: 'casco-bell-srt',
+    name: 'Casco Bell SRT',
+    category: 'cascos',
+    price: 65,
+    sizes: HELMET_SIZES,
+    image: 'casco-bell-srt',
+    dims: [857, 850],
+    bg: '#000000',
+    alt: 'Casco integral Bell SRT negro mate con visor transparente',
+    short: 'Integral, negro mate',
+    description: 'Casco integral Bell SRT en negro mate, con visor transparente. Para la ciudad y la carretera.',
+    specs: [
+      ['Marca', 'Bell'],
+      ['Tipo', 'Integral'],
+      ['Color', 'Negro mate'],
+      ['Visor', 'Transparente'],
+    ],
+  },
+  {
+    slug: 'casco-tss-atomic-adventure',
+    name: 'Casco TSS Atomic adventure',
+    category: 'cascos',
+    sizes: HELMET_SIZES,
+    image: 'casco-tss-atomic-adventure',
+    dims: [662, 664],
+    bg: '#ffffff',
+    alt: 'Casco adventure TSS Atomic gris con gráficos rosados y morados, visera y visor transparente',
+    short: 'Doble propósito, con visera',
+    description: 'Casco adventure TSS Atomic de doble propósito, con visera y visor transparente. Gris con gráficos rosados y morados.',
+    specs: [
+      ['Marca', 'TSS'],
+      ['Modelo', 'Atomic'],
+      ['Tipo', 'Adventure, doble propósito'],
+      ['Color', 'Gris, rosado y morado'],
+    ],
+  },
+  {
+    slug: 'casco-atomic-integral',
+    name: 'Casco Atomic integral',
+    category: 'cascos',
+    sizes: HELMET_SIZES,
+    image: 'casco-atomic-integral',
+    dims: [660, 647],
+    bg: '#000000',
+    alt: 'Casco integral Atomic negro brillante con franjas grises, blancas y rojas',
+    short: 'Integral, negro con rojo',
+    description: 'Casco integral Atomic negro brillante con franjas grises, blancas y rojas, y visor ahumado.',
+    specs: [
+      ['Modelo', 'Atomic'],
+      ['Tipo', 'Integral'],
+      ['Color', 'Negro, gris, blanco y rojo'],
+    ],
+  },
+  {
+    slug: 'chaqueta-ls2-negra-roja',
+    name: 'Chaqueta LS2 negra y roja',
+    category: 'chaquetas',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    image: 'chaqueta-ls2-negra-roja',
+    dims: [948, 936],
+    bg: '#000000',
+    alt: 'Chaqueta de moto LS2 textil negra con paneles rojos y protecciones en los hombros',
+    short: 'Textil, con protecciones',
+    description: 'Chaqueta de moto LS2 textil en negro con paneles rojos, protecciones en hombros y codos y detalles reflectivos.',
+    specs: [
+      ['Marca', 'LS2'],
+      ['Material', 'Textil'],
+      ['Color', 'Negro y rojo'],
+      ['Protecciones', 'Hombros y codos'],
+    ],
+  },
+  {
+    slug: 'guantes-alpinestars-gp-plus-r',
+    name: 'Guantes Alpinestars GP Plus R',
+    category: 'guantes',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    image: 'guantes-alpinestars-gp-plus-r',
+    dims: [960, 720],
+    bg: 'linear-gradient(#2d2d2d, #464646)',
+    alt: 'Par de guantes de cuero Alpinestars GP Plus R negros con protector de nudillos blanco',
+    short: 'Cuero, puño largo',
+    description: 'Guantes de pista Alpinestars GP Plus R en cuero negro, con puño largo y protector de nudillos.',
+    specs: [
+      ['Marca', 'Alpinestars'],
+      ['Modelo', 'GP Plus R'],
+      ['Material', 'Cuero'],
+      ['Puño', 'Largo'],
+    ],
+  },
+]
+
+export const findProduct = (slug: string) => PRODUCTS.find((p) => p.slug === slug)
+
+/** Solo los productos con precio se pueden comprar. */
+export const canBuy = (p: Product): p is Product & { price: number } => typeof p.price === 'number'
