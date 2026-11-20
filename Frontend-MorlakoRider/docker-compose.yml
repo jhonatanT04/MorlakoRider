@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build: .
+    image: morlako-frontend
+    container_name: morlako-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped

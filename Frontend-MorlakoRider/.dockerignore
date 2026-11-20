@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+shots
+.taste-skill
+assets
+*.log
+.git
+.vscode
+Dockerfile
+.dockerignore
