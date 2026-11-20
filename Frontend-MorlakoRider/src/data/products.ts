@@ -1,6 +1,6 @@
 /**
  * Catálogo de la tienda, con las fotos del cliente (public/assets/img/products).
- * Solo el Bell SRT tiene precio confirmado. Los productos sin `price` se muestran como
+ * Todos los productos tienen precio. Si uno queda sin `price`, se muestra como
  * "Precio por confirmar" y no se pueden agregar al carrito hasta que se ponga su precio aquí.
  * Las tallas son las habituales de cada tipo de producto: confirmarlas con el stock real.
  * Más adelante este catálogo puede venir del backend (Backend-MR).
@@ -58,6 +58,7 @@ export const PRODUCTS: Product[] = [
     slug: 'casco-tss-atomic-adventure',
     name: 'Casco TSS Atomic adventure',
     category: 'cascos',
+    price: 79,
     sizes: HELMET_SIZES,
     image: 'casco-tss-atomic-adventure',
     dims: [662, 664],
@@ -76,6 +77,7 @@ export const PRODUCTS: Product[] = [
     slug: 'casco-atomic-integral',
     name: 'Casco Atomic integral',
     category: 'cascos',
+    price: 69,
     sizes: HELMET_SIZES,
     image: 'casco-atomic-integral',
     dims: [660, 647],
@@ -93,6 +95,7 @@ export const PRODUCTS: Product[] = [
     slug: 'chaqueta-ls2-negra-roja',
     name: 'Chaqueta LS2 negra y roja',
     category: 'chaquetas',
+    price: 120,
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     image: 'chaqueta-ls2-negra-roja',
     dims: [948, 936],
@@ -111,6 +114,7 @@ export const PRODUCTS: Product[] = [
     slug: 'guantes-alpinestars-gp-plus-r',
     name: 'Guantes Alpinestars GP Plus R',
     category: 'guantes',
+    price: 25,
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     image: 'guantes-alpinestars-gp-plus-r',
     dims: [960, 720],
