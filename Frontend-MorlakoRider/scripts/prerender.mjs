@@ -17,6 +17,12 @@ for (const route of [...routes, '/404/']) {
   let page = template.replace(marker, `<div id="root">${html}</div>`).replace(/<title>.*?<\/title>/, `<title>${esc(title)}</title>`)
   // las páginas de la tienda no llevan el momento de la portada
   if (route !== '/') page = page.replace(/<link rel="modulepreload" href="\/assets\/moments\/[^"]+">\n?/g, '')
+  // por ahora solo la página principal lleva la vista previa del enlace (og: y twitter:)
+  if (route !== '/') {
+    page = page
+      .replace(/<!-- Vista previa al compartir[\s\S]*?-->\n?/, '')
+      .replace(/<meta (?:property="og:[^"]+"|name="twitter:[^"]+") content="[^"]*">\n?/g, '')
+  }
   const out = route === '/404/' ? resolve('dist/404.html') : join(resolve('dist'), route, 'index.html')
   await mkdir(resolve(out, '..'), { recursive: true })
   await writeFile(out, page)
