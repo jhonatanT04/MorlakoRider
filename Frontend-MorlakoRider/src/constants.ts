@@ -1,5 +1,5 @@
 /** WhatsApp queda solo como contacto para dudas; las ventas se hacen en la tienda de la página. */
-export const WHATSAPP = 'https://wa.me/593984510834'
+export const WHATSAPP = 'https://wa.me/593967527607'
 
 /** Enlace de WhatsApp con un mensaje ya escrito. */
 export const wa = (text: string) => `${WHATSAPP}?text=${encodeURIComponent(text)}`
