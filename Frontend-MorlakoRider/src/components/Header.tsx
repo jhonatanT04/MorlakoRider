@@ -17,14 +17,7 @@ const BagIcon = () => (
   </svg>
 )
 
-/**
- * Barra de esquina a esquina: el nombre en dorado a la izquierda, las opciones al centro y el
- * carrito a la derecha (con el número de artículos). Al bajar más de 24px se convierte en la isla
- * de vidrio (index.css, "Navbar isla"). El carrito queda visible también en el teléfono.
- */
 function Header() {
-  // La clase se pone a mano (no con estado de React) para no pisar las clases que
-  // system.js añade al mismo header (is-open del menú en el teléfono).
   const ref = useRef<HTMLElement>(null)
   const count = cartCount(useCart())
 

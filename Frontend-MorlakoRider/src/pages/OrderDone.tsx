@@ -4,7 +4,6 @@ import { BANK, ORDER_EMAIL, money } from '../constants'
 import { findProduct } from '../data/products'
 import { lastOrder, type Order } from '../lib/orders'
 
-/** /pedido: confirmación del pedido; con transferencia, los datos de la cuenta. */
 function OrderDone() {
   const [order, setOrder] = useState<Order | null | undefined>(undefined)
   useEffect(() => {
@@ -50,7 +49,6 @@ function OrderDone() {
               ) : (
                 <section className="done__block" aria-labelledby="card-h">
                   <h2 id="card-h">Pago con tarjeta</h2>
-                  {/* PENDIENTE: con la pasarela conectada, el cliente llega aquí después de pagar y se muestra el estado real del pago */}
                   <p>El pago con tarjeta se confirma en la pasarela de pago. Te avisamos por correo cuando esté aprobado.</p>
                 </section>
               )}

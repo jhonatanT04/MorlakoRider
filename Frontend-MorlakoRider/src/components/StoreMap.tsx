@@ -1,7 +1,6 @@
 import { Map, MapControls, MapMarker, MarkerContent, MarkerPopup } from './ui/map'
 import { LOCATION, mapDirections } from '../constants'
 
-/* textos de MapLibre en español (el aviso de "usa dos dedos" y los botones) */
 const locale = {
   'CooperativeGesturesHandler.WindowsHelpText': 'Usa Ctrl + rueda del mouse para acercar el mapa',
   'CooperativeGesturesHandler.MacHelpText': 'Usa ⌘ + rueda para acercar el mapa',
@@ -9,10 +8,6 @@ const locale = {
   'AttributionControl.ToggleAttribution': 'Mostrar créditos del mapa',
 }
 
-/**
- * El mapa del local con mapcn (MapLibre y el mapa oscuro de CARTO): el pin con la mascota y, al
- * tocarlo, la dirección y "Cómo llegar". Solo corre en el navegador (Home lo carga después de montar).
- */
 export default function StoreMap() {
   const [lng, lat] = LOCATION.coords
   return (

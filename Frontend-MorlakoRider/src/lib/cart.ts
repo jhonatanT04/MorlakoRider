@@ -1,8 +1,3 @@
-/**
- * Carrito de la tienda, guardado en localStorage para que siga ahí al cambiar de página.
- * useCart() usa useSyncExternalStore: en el render del servidor (y al hidratar) el carrito está
- * vacío, y en el navegador se actualiza en cuanto la página carga.
- */
 import { useSyncExternalStore } from 'react'
 import { canBuy, findProduct } from '../data/products'
 
@@ -35,7 +30,6 @@ function write(lines: CartLine[]) {
 
 function subscribe(fn: () => void) {
   listeners.add(fn)
-  // otra pestaña cambió el carrito
   const onStorage = (e: StorageEvent) => {
     if (e.key === KEY) {
       cache = null

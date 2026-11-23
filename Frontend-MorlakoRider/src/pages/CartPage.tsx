@@ -3,7 +3,6 @@ import { money } from '../constants'
 import { findProduct } from '../data/products'
 import { cartTotal, MAX_QTY, removeLine, setQty, useCart } from '../lib/cart'
 
-/** /carrito: las líneas del carrito, cantidades, total y el paso al pago. */
 function CartPage() {
   const lines = useCart()
   const total = cartTotal(lines)

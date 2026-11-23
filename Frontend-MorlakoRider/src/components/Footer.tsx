@@ -1,10 +1,6 @@
 import type { ReactNode } from 'react'
 import { wa } from '../constants'
 
-/**
- * Pie de página. En la portada lleva antes el cierre con foto (closing), que ocupa su pantalla;
- * después, en todas las páginas, el pie con los enlaces que se descubre al hacer scroll.
- */
 function Footer({ closing }: { closing?: ReactNode }) {
   const links = (
     <div className="closing__links">
@@ -46,8 +42,6 @@ function Footer({ closing }: { closing?: ReactNode }) {
     </div>
   )
 
-  /* el pie con los enlaces y el nombre grande: queda fijo debajo de la página y aparece al final,
-     cuando la página sube como una cortina (.footer--reveal en index.css) */
   const reveal = (
     <footer className="footer footer--dark ground-inverse footer--reveal" id={closing ? undefined : 'contact'}>
       <div className="wrap">{links}</div>

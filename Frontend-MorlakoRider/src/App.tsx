@@ -9,11 +9,6 @@ import OrderDone from './pages/OrderDone'
 import ProductPage from './pages/ProductPage'
 import Shop from './pages/Shop'
 
-/**
- * Rutas de la tienda. Cada una se prerenderiza en su propio dist/<ruta>/index.html
- * (scripts/prerender.mjs), y se navega con enlaces normales: cada página carga entera y el
- * carrito sigue en localStorage.
- */
 export const ROUTES = [
   { path: '/', title: 'Morlako Rider: cascos y chaquetas de moto en Cuenca' },
   { path: '/tienda/', title: 'Tienda | Morlako Rider' },
@@ -26,17 +21,12 @@ export const ROUTES = [
 export const titleFor = (path: string) =>
   ROUTES.find((r) => r.path === normalize(path))?.title ?? 'Página no encontrada | Morlako Rider'
 
-/** "/tienda" y "/tienda/index.html" son "/tienda/". */
 export function normalize(path: string) {
   let p = path.replace(/index\.html$/, '')
   if (!p.endsWith('/')) p += '/'
   return p
 }
 
-/**
- * El kit de la skill (system.js, motion.js, layout.js) lee el HTML ya pintado y le añade clases,
- * así que se carga una sola vez, después de que React montó o hidrató la página.
- */
 function useKitScripts() {
   useEffect(() => {
     if (document.querySelector('script[data-kit]')) return
@@ -86,7 +76,6 @@ function App({ path }: { path: string }) {
     <>
       <Header />
       <Page path={path} />
-      {/* la portada trae su propio pie con el cierre con foto */}
       {!home && <Footer />}
     </>
   )

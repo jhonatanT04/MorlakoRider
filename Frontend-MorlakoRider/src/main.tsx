@@ -11,8 +11,6 @@ const app = (
   </StrictMode>
 )
 
-// En producción cada página viene prerenderizada (scripts/prerender.mjs): React la hidrata.
-// En desarrollo (npm run dev) el contenedor está vacío y se renderiza desde cero.
 if (container.firstElementChild) hydrateRoot(container, app)
 else {
   document.title = titleFor(path)

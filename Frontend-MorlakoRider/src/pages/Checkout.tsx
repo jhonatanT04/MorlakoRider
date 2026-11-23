@@ -36,7 +36,6 @@ function validate(c: Customer): Errors {
   return e
 }
 
-/** /checkout: datos de entrega, método de pago y confirmación del pedido. */
 function Checkout() {
   const lines = useCart()
   const total = cartTotal(lines)
@@ -75,7 +74,6 @@ function Checkout() {
     }
     setSending(true)
     const order = await createOrder(lines, c, payment, payment === 'transferencia' ? t : undefined)
-    // transferencia: el pedido y los datos de la transferencia van directo al WhatsApp de la tienda
     const next = payment === 'tarjeta' ? await startCardPayment(order) : transferWhatsApp(order)
     clearCart()
     location.href = next

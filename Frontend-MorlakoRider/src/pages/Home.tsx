@@ -6,7 +6,6 @@ import { PRODUCTS, canBuy, findProduct } from '../data/products'
 
 const destacado = findProduct('casco-bell-srt')!
 
-/** Las tres categorías, cada una con la foto de un producto de la tienda. */
 const catalogo = [
   { slug: 'casco-atomic-integral', cat: 'cascos', title: 'Cascos para moto', facts: 'Integrales y adventure: Bell, TSS y Atomic' },
   { slug: 'chaqueta-ls2-negra-roja', cat: 'chaquetas', title: 'Chaquetas de moto', facts: 'Textiles LS2 con protecciones' },
@@ -40,7 +39,6 @@ const faqs = [
   },
 ]
 
-/* fotos del cliente (public/assets/img/cliente-*.jpg) */
 const pasos = [
   {
     title: 'Tu casco y tu talla',
@@ -73,7 +71,6 @@ const pasos = [
 
 const svg = { viewBox: '0 0 24 24', width: 28, height: 28, fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round' } as const
 
-/* beneficios: iconos de línea en el dorado de la marca */
 const BENEFICIOS = [
   { title: 'Equipamiento de calidad', text: 'Productos seleccionados para motociclistas.',
     icon: <svg {...svg}><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z" /><path d="m8.5 12 2.5 2.5 4.5-5" /></svg> },
@@ -85,8 +82,6 @@ const BENEFICIOS = [
     icon: <svg {...svg}><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12Z" /><path d="M8.5 11h7M8.5 14h4" /></svg> },
 ]
 
-/* el mapa (mapcn + MapLibre) solo en el navegador y en su propio archivo: la página se prerenderiza
-   sin él y no carga MapLibre hasta llegar a la portada */
 const StoreMap = lazy(() => import('../components/StoreMap'))
 
 function LocalMap() {
@@ -103,11 +98,6 @@ function LocalMap() {
   )
 }
 
-/*
- * "Tres pasos" con efecto de scroll también en teléfono y tablet. El momento del kit (pinned-chapters)
- * solo se activa desde 1024px; por debajo, esta versión fija la sección en pantalla mientras se
- * hace scroll y abre un paso a la vez, con su foto (estilos: .pc-touch en index.css).
- */
 function usePhoneChapters() {
   useEffect(() => {
     const sec = document.getElementById('pedido')
@@ -156,7 +146,6 @@ function Home() {
   return (
     <>
       <main id="top">
-        {/* HERO oscuro: la foto del cliente de fondo a todo lo ancho y el texto a la izquierda */}
         <section className="hero hero--photo hero--night" data-box="none" data-tone="dark" data-calm="left" data-enter aria-labelledby="hero-h">
           <img
             className="hero__bg"
@@ -189,7 +178,6 @@ function Home() {
           </div>
         </section>
 
-        {/* BENEFICIOS: cuatro razones para confiar, sin foto ni banner, antes del catálogo */}
         <section className="section" id="beneficios" aria-labelledby="beneficios-h">
           <div className="wrap grid">
             <div className="span-5 benefits__intro">
@@ -211,7 +199,6 @@ function Home() {
           </div>
         </section>
 
-        {/* UBICACIÓN: dirección, horario y el mapa del local */}
         <section className="section" id="ubicacion" aria-labelledby="ubicacion-h">
           <div className="wrap grid">
             <div className="span-5 ubicacion__info">
@@ -249,7 +236,6 @@ function Home() {
           </div>
         </section>
 
-        {/* CATÁLOGO: tres categorías que llevan a la tienda */}
         <section className="section" id="catalogo" aria-labelledby="catalogo-h">
           <div className="wrap">
             <div className="section-head">
@@ -277,7 +263,6 @@ function Home() {
           </div>
         </section>
 
-        {/* CASCO DESTACADO: dark-band, split texto + foto */}
         <section className="section ground-maroon" id="casco" aria-labelledby="casco-h">
           <div className="wrap grid">
             <div className="span-6">
@@ -302,7 +287,6 @@ function Home() {
           </div>
         </section>
 
-        {/* CÓMO COMPRAR: el momento pinned-chapters (dos pantallas) */}
         <section className="section" id="pedido" style={{ '--h': 2 } as CSSProperties} data-moment="pinned-chapters" aria-labelledby="pedido-h">
           <div className="wrap mo-pc__grid">
             <div className="mo-pc__text">
@@ -322,7 +306,6 @@ function Home() {
             <div className="mo-pc__visuals frame"></div>
           </div>
         </section>
-        {/* PREGUNTAS: faq, el split de la página */}
         <section className="section" id="faq" aria-labelledby="preguntas-h">
           <div className="wrap grid">
             <div className="span-6">
@@ -346,7 +329,6 @@ function Home() {
                 />
               </div>
             </div>
-            {/* cajas tipo acordeón: <details> nativo, una abierta a la vez */}
             <div className="faq-box span-6 start-7">
               {faqs.map((f, i) => (
                 <details className="faq-box__item" name="faq" open={i === 0} key={f.q}>

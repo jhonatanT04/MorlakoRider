@@ -4,7 +4,6 @@ import { money, wa } from '../constants'
 import { CATEGORIES, canBuy, type Product } from '../data/products'
 import { addToCart, MAX_QTY } from '../lib/cart'
 
-/** /producto/:slug: foto, precio, talla, cantidad y "Agregar al carrito". */
 function ProductPage({ product: p }: { product: Product }) {
   const [size, setSize] = useState<string | null>(null)
   const [qty, setQty] = useState(1)

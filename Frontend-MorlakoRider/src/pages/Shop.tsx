@@ -5,9 +5,7 @@ import { CATEGORIES, PRODUCTS, type Category } from '../data/products'
 
 type Filter = Category | 'todos'
 
-/** /tienda: todos los productos, con filtro por categoría (?cat=cascos). */
 function Shop() {
-  // el filtro se lee de la URL después de montar, así el HTML prerenderizado (todos) hidrata igual
   const [cat, setCat] = useState<Filter>('todos')
   useEffect(() => {
     const q = new URLSearchParams(location.search).get('cat')

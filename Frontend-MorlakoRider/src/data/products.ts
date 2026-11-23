@@ -1,24 +1,13 @@
-/**
- * Catálogo de la tienda, con las fotos del cliente (public/assets/img/products).
- * Todos los productos tienen precio. Si uno queda sin `price`, se muestra como
- * "Precio por confirmar" y no se pueden agregar al carrito hasta que se ponga su precio aquí.
- * Las tallas son las habituales de cada tipo de producto: confirmarlas con el stock real.
- * Más adelante este catálogo puede venir del backend (Backend-MR).
- */
 export type Category = 'cascos' | 'chaquetas' | 'guantes'
 
 export type Product = {
   slug: string
   name: string
   category: Category
-  /** en dólares; sin precio el producto no se puede comprar todavía */
   price?: number
   sizes: string[]
-  /** foto en public/assets/img/products/<image>-500.jpg y -960.jpg */
   image: string
-  /** ancho y alto del archivo -960 (puede ser menor a 960) */
   dims: [number, number]
-  /** fondo de la foto, para que el marco no la recorte en otro color */
   bg: string
   alt: string
   short: string
@@ -133,5 +122,4 @@ export const PRODUCTS: Product[] = [
 
 export const findProduct = (slug: string) => PRODUCTS.find((p) => p.slug === slug)
 
-/** Solo los productos con precio se pueden comprar. */
 export const canBuy = (p: Product): p is Product & { price: number } => typeof p.price === 'number'

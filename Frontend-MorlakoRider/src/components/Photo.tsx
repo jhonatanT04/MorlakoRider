@@ -1,9 +1,7 @@
 import type { CSSProperties } from 'react'
 
-/** Fotos que tienen versión de 1280 px además de 500 y 960. */
 const FULL = new Set(['f21655085', 'f43902550', 'f61873805'])
 
-/** Ancho y alto del archivo más grande de cada foto (evita saltos de layout al cargar). */
 const DIMS: Record<string, [number, number]> = {
   f21655085: [1280, 431],
   f1364380: [960, 713],
@@ -15,7 +13,6 @@ const DIMS: Record<string, [number, number]> = {
   f75794406: [960, 644],
 }
 
-/** Una foto de assets/img con sus tamaños (500, 960 y, si existe, 1280 px). */
 export function Photo({
   id,
   alt,
@@ -62,7 +59,6 @@ export const Arrow = () => (
   </svg>
 )
 
-/** La foto de un producto de la tienda (public/assets/img/products), sobre su propio fondo. */
 export function ProductImage({
   product: p,
   sizes = '(max-width: 1023px) 100vw, 50vw',
