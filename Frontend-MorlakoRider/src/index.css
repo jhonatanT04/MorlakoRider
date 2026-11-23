@@ -234,8 +234,9 @@
 
 /* ---------------------------------------------------------------- fondo de fibra de carbono
    El tejido es un patrón CSS de 8px (sin imagen), con una luz suave arriba al centro y las esquinas
-   más oscuras. Va en el body; las secciones sobre el negro carbón quedan transparentes para que se vea. */
-body {
+   más oscuras. Va en el body; las secciones sobre el negro carbón quedan transparentes para que se vea.
+   main y el cierre llevan el mismo fondo, opaco, para tapar el pie que aparece como cortina. */
+body, main, footer.closing.closing--solo {
   background-color: var(--p-bg);
   background-image:
     radial-gradient(120% 80% at 50% 0%, rgb(248 243 223 / 0.07), transparent 60%),
@@ -532,7 +533,6 @@ main > section:not(.ground-inverse):not(.ground-maroon) { background: transparen
    un espacio negro debajo de los enlaces); la foto llena lo que dejan las palabras */
 @media (max-width: 639px) {
   #contact.closing { --hm: 1; }
-  #contact.closing > .wrap { grid-template-rows: minmax(0, 1fr) auto; row-gap: var(--s-7); }
   #contact .closing__cta > .close__media { min-height: 220px; }
 }
 
@@ -641,3 +641,28 @@ main > #pedido.pc-touch > .mo-pc__grid {
 
 /* tres pasos: fondo de color sólido (sin la fibra de carbono del body) */
 main > section#pedido { background: var(--p-bg); }
+
+/* ---------------------------------------------------------------- el pie que aparece como cortina
+   La página (main y el cierre con foto) va encima con su fondo; el pie queda fijo debajo, pegado al
+   borde inferior de la pantalla, y se descubre mientras la página sube. Abajo, el nombre en grande. */
+main, footer.closing { position: relative; z-index: 1; }
+footer.closing.closing--solo > .wrap { grid-template-rows: minmax(0, 1fr); }
+.footer--reveal {
+  position: sticky; bottom: 0; z-index: 0; overflow: clip;
+  padding-block: var(--s-9) 0; border-top: 0; background: var(--p-inv-bg);
+}
+.footer__word {
+  margin: var(--s-9) 0 0; padding: 0 0 0 2vw; white-space: nowrap; pointer-events: none; user-select: none;
+  font-family: var(--font-display); font-weight: 800; font-variation-settings: "wdth" 80;
+  font-size: 13.4vw; line-height: 0.74; letter-spacing: -0.035em; text-transform: uppercase;
+  color: rgb(248 243 223 / 0.06); margin-bottom: -0.04em;
+}
+/* una ventana más baja que el pie: el pie va en su lugar normal, sin cortina, para que no se encime */
+@media (max-height: 720px) { .footer--reveal { position: relative; } }
+@media (max-width: 639px) {
+  .footer--reveal { padding-top: var(--s-8); }
+  .footer__word { margin-top: var(--s-8); font-size: 13.4vw; }
+}
+/* el cierre con foto, ahora sin los enlaces: la foto llena la pantalla que le toca (sin hueco negro) */
+footer.closing.closing--solo > .wrap { display: flex; flex-direction: column; }
+footer.closing.closing--solo .closing__cta { flex: 1 1 auto; }

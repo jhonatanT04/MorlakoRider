@@ -2,8 +2,8 @@ import type { ReactNode } from 'react'
 import { wa } from '../constants'
 
 /**
- * Pie de página. En la portada lleva antes el cierre con foto (closing) y ocupa su pantalla;
- * en las páginas de la tienda es solo el pie con los enlaces.
+ * Pie de página. En la portada lleva antes el cierre con foto (closing), que ocupa su pantalla;
+ * después, en todas las páginas, el pie con los enlaces que se descubre al hacer scroll.
  */
 function Footer({ closing }: { closing?: ReactNode }) {
   const links = (
@@ -46,21 +46,26 @@ function Footer({ closing }: { closing?: ReactNode }) {
     </div>
   )
 
-  if (closing)
-    return (
-      <footer className="footer closing footer--dark ground-inverse" id="contact" aria-labelledby="close-h">
-        <div className="wrap">
-          {closing}
-          {links}
-        </div>
-      </footer>
-    )
-
-  return (
-    <footer className="footer footer--dark ground-inverse footer--shop" id="contact">
+  /* el pie con los enlaces y el nombre grande: queda fijo debajo de la página y aparece al final,
+     cuando la página sube como una cortina (.footer--reveal en index.css) */
+  const reveal = (
+    <footer className="footer footer--dark ground-inverse footer--reveal" id={closing ? undefined : 'contact'}>
       <div className="wrap">{links}</div>
+      <p className="footer__word" aria-hidden="true">Morlako Rider</p>
     </footer>
   )
+
+  if (closing)
+    return (
+      <>
+        <footer className="footer closing footer--dark ground-inverse closing--solo" id="contact" aria-labelledby="close-h">
+          <div className="wrap">{closing}</div>
+        </footer>
+        {reveal}
+      </>
+    )
+
+  return reveal
 }
 
 export default Footer
