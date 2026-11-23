@@ -31,21 +31,21 @@ export const money = (n: number) =>
   })
 
 /**
- * Dónde queda el local. PENDIENTE: el cliente debe dar la dirección exacta y el horario.
+ * Dónde queda el local (la dirección de su ficha en Google Maps).
+ * Si `hours` queda vacío, la portada pide escribir por WhatsApp para confirmar el horario.
  * `mapQuery` es el nombre del local tal como aparece en Google Maps; lo usa el botón "Cómo llegar".
+ * `coords` es [longitud, latitud] del pin en el mapa.
  */
 export const LOCATION = {
-  address: '[Calle principal y secundaria]',
-  reference: '[Referencia: frente a…, junto a…]',
+  address: 'Av. 27 de Febrero, entre Jacinto Flores y Roberto Crespo Toral',
   city: 'Cuenca, Ecuador',
   hours: [
-    ['Lunes a viernes', '[09:00 – 18:00]'],
-    ['Sábado', '[09:00 – 13:00]'],
+    ['Lunes a viernes', '10:00 – 19:00'],
+    ['Sábado', '10:00 – 15:00'],
   ] as [string, string][],
   mapQuery: 'Morlako Rider, Cuenca, Ecuador',
+  coords: [-79.0059029, -2.9154243] as [number, number],
 }
 
-/** El mapa embebido (la ficha "Morlako Rider" de Google Maps) y el enlace "Cómo llegar". */
-export const mapEmbed =
-  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.654302866708!2d-79.00590292396359!3d-2.9154243395792294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd1983a1931d25%3A0xf46be65018a8f92!2sMorlako%20Rider!5e0!3m2!1ses!2sec!4v1795403480907!5m2!1ses!2sec'
+/** El enlace "Cómo llegar" (abre la ruta en Google Maps). */
 export const mapDirections = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(LOCATION.mapQuery)}`

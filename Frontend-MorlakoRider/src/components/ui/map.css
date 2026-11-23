@@ -1,0 +1,32 @@
+/* Tailwind solo para el mapa de mapcn: sin preflight (no toca los estilos del kit) y generando
+   únicamente las clases que usa map.tsx. Los colores de shadcn apuntan a la paleta de la marca. */
+@layer theme, base, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@source "./map.tsx";
+
+@theme inline {
+  --color-background: var(--p-surface);
+  --color-foreground: var(--p-ink);
+  --color-popover: var(--p-surface);
+  --color-popover-foreground: var(--p-ink);
+  --color-muted: rgb(248 243 223 / 0.08);
+  --color-muted-foreground: var(--p-muted);
+  --color-accent: rgb(248 177 52 / 0.18);
+  --color-accent-foreground: var(--p-ink);
+  --color-border: rgb(248 243 223 / 0.14);
+  --color-ring: var(--p-accent);
+}
+
+/* el CSS que pide el registro de mapcn */
+@layer base {
+  /* lo poco del preflight de Tailwind que mapcn necesita, solo dentro del mapa */
+  .maplibregl-map button { background-color: transparent; border: 0 solid var(--color-border); padding: 0; color: inherit; cursor: pointer; }
+  .maplibregl-map *, .maplibregl-map ::before, .maplibregl-map ::after { box-sizing: border-box; border-style: solid; border-width: 0; border-color: var(--color-border); }
+  .maplibregl-popup-content { @apply bg-transparent! shadow-none! p-0! rounded-none!; }
+  .maplibregl-popup-tip { @apply hidden!; }
+  .maplibregl-ctrl-attrib { @apply bg-background! text-muted-foreground! border-border! rounded-md! border! shadow-sm!; }
+  .maplibregl-ctrl-attrib a { @apply text-muted-foreground!; }
+  .maplibregl-ctrl-attrib a:hover { @apply text-foreground!; }
+  .maplibregl-ctrl-attrib-button { @apply bg-transparent! invert; }
+}
