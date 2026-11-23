@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react'
 import Footer from '../components/Footer'
 import { Arrow, ProductImage } from '../components/Photo'
-import { PRIMARY, money, wa } from '../constants'
+import { LOCATION, PRIMARY, mapDirections, mapEmbed, money, wa } from '../constants'
 import { findProduct } from '../data/products'
 
 const destacado = findProduct('casco-bell-srt')!
@@ -137,6 +137,45 @@ function Home() {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* UBICACIÓN: dirección, horario y el mapa del local */}
+        <section className="section" id="ubicacion" aria-labelledby="ubicacion-h">
+          <div className="wrap grid">
+            <div className="span-5 ubicacion__info">
+              <div className="section-head">
+                <h2 id="ubicacion-h">Visítanos en Cuenca</h2>
+                <p>Ven a probarte el casco y la chaqueta antes de llevarlos.</p>
+              </div>
+              <address className="ubicacion__address">
+                <span className="ubicacion__label">Dirección</span>
+                <span>{LOCATION.address}</span>
+                <span className="ubicacion__muted">{LOCATION.reference}</span>
+                <span className="ubicacion__muted">{LOCATION.city}</span>
+              </address>
+              <div className="ubicacion__hours">
+                <span className="ubicacion__label">Horario</span>
+                <dl>
+                  {LOCATION.hours.map(([d, h]) => (
+                    <div key={d}><dt>{d}</dt><dd>{h}</dd></div>
+                  ))}
+                </dl>
+              </div>
+              <div className="ubicacion__cta">
+                <a className="btn btn--primary" href={mapDirections} target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+                <a className="btn btn--secondary" href={wa('Hola Morlako Rider, quiero visitar el local.')} target="_blank" rel="noopener noreferrer">Escríbenos</a>
+              </div>
+            </div>
+            <div className="span-7 start-6 ubicacion__map">
+              <iframe
+                title={`Mapa: Morlako Rider, ${LOCATION.city}`}
+                src={mapEmbed}
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
           </div>
         </section>
 
