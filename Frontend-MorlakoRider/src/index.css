@@ -638,3 +638,6 @@ main > #pedido.pc-touch > .mo-pc__grid {
   #catalogo .cat-tile__body { padding-inline: var(--s-2); }
   #catalogo .cat-tile__body h3 { font-size: 21px; }
 }
+
+/* tres pasos: fondo de color sólido (sin la fibra de carbono del body) */
+main > section#pedido { background: var(--p-bg); }
