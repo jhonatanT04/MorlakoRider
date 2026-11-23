@@ -54,7 +54,7 @@ function Shop() {
               <li key={p.slug}>
                 <a className="product-card" href={`/producto/${p.slug}/`}>
                   <div className="product-card__media" style={{ background: p.bg }}>
-                    <ProductImage product={p} sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 420px" />
+                    <ProductImage product={p} sizes="(max-width: 639px) 50vw, (max-width: 1023px) 50vw, 420px" />
                   </div>
                   <div className="product-card__body">
                     <h2>{p.name}</h2>
